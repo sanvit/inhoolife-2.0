@@ -5,7 +5,7 @@ import express from "express";
 const app = express();
 import multer from "multer";
 
-mongoose.connect("mongodb://localhost/inhoolife2");
+mongoose.connect("mongodb://test:W0GunymdOzf5uBHX@cluster1-shard-00-00.0yyp3.mongodb.net:27017,cluster1-shard-00-01.0yyp3.mongodb.net:27017,cluster1-shard-00-02.0yyp3.mongodb.net:27017/inhoolife?ssl=true&replicaSet=atlas-z2te8m-shard-0&authSource=admin&retryWrites=true&w=majority");
 
 const GQLServer = new GraphQLServer({
   typeDefs: "graphql/schema.graphql",
